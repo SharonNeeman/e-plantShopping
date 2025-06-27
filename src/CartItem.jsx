@@ -9,7 +9,8 @@ const CartItem = ({ onContinueShopping }) => {
 
   // Calculate total amount for all products in the cart
   const calculateTotalAmount = () => {
- 
+    //test
+     return cart.reduce((total, item) => total + (item.quantity * Number(item.cost.replace('$', ''))), 0);
   };
 
   const handleContinueShopping = (e) => {
@@ -39,7 +40,8 @@ const CartItem = ({ onContinueShopping }) => {
 
   // Calculate total cost based on quantity for an item
   const calculateTotalCost = (item) => {
- 
+     const cost = Number(item.cost.replace('$', ''));
+    return item.quantity * cost;
   };
 
   return (
