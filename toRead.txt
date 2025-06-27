@@ -1,0 +1,7 @@
+https://github.com/ibm-developer-skills-network/e-plantShopping.git
+
+
+git clone <forked-repo-link>
+cd e-plantShopping
+npm install
+npm run preview
